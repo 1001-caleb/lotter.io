@@ -1,7 +1,7 @@
 import React from "react";
 import { AppBar, Button, Container, Grid, Stack, Toolbar } from "@mui/material";
 import PaidRoundedIcon from "@mui/icons-material/PaidRounded";
-import icon from "../assets/react.svg";
+import icon from "../assets/dice-game-icon.svg";
 
 export const NavBar: React.FC<{}> = () => {
   return (
