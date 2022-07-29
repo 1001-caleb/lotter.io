@@ -7,7 +7,7 @@ type StepsProps = {
 
 export const StepsSection: React.FC<StepsProps> = ({ steps, activeStep }) => {
     return (
-        <Box sx={{ mt: 4 }}>
+        <Box sx={{ mt: 4 }} overflow='scroll'>
             <Stepper activeStep={activeStep}>
                 {steps.map((step: any, index: any) => (
                     <Step key={index}>

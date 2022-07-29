@@ -27,16 +27,16 @@ const theme = createTheme({
     fontFamily: ThemePalette.TYPO_GLOBAL,
     h1: {
       fontFamily: ThemePalette.TYPO_BLACK,
-      fontSize: "80px",
+      fontSize: "60px",
       color: ThemePalette.GREEN,
     },
     h2: {
       fontFamily: ThemePalette.TYPO_BLACK,
-      fontSize: "60px",
+      fontSize: "40px",
     },
     h3: {
       fontFamily: ThemePalette.TYPO_BLACK,
-      fontSize: "40px",
+      fontSize: "30px",
     },
     h4: {
       fontFamily: ThemePalette.TYPO_BLACK,

@@ -44,7 +44,7 @@ export const HomePage: React.FC<{}> = () => {
 
   return (
     <>
-      <Container maxWidth='xl' sx={{ mt: 9 }}>
+      <Container maxWidth='md' sx={{ mt: 9 }}>
         <HeaderComponent title='Lotter.io' description='Genera tu sorteo Gratis.' />
         <StepsSection steps={steps} activeStep={activeStep} />
         <Container sx={{ mt: 6 }} maxWidth='md'>
