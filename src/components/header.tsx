@@ -9,7 +9,11 @@ export const HeaderComponent: React.FC<HeaderProps> = ({ title, description }) =
     return (
         <>
             <Box>
-                <Grid sx={{ height: "250px" }} container direction='column' justifyContent='center' spacing={3}>
+                <Grid sx={{ height: "250px" }} container direction="column"
+                    justifyContent="center"
+                    alignItems="center"
+                    spacing={3}
+                >
                     <Grid item>
                         <Typography variant='h1'>{title}</Typography>
                     </Grid>

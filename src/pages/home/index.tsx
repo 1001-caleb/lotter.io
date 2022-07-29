@@ -1,12 +1,14 @@
-import { Button, Container, Typography } from "@mui/material";
+import { Button, Container, Grid, Typography } from "@mui/material";
 import React from "react";
 import { HeaderComponent } from "../../components";
+import { steps } from "../../constans/steps";
 import { InputForm, WinnerSection } from "./sections";
 import { StepsSection } from "./sections/steps";
 
 export const HomePage: React.FC<{}> = () => {
   const [participant, setParticipant] = React.useState<string | null>(null);
   const [activeStep, setActiveStep] = React.useState<number>(0);
+  const [totalWinners, setTotalWinners] = React.useState<string>("");
   const [participants, setParticipants] = React.useState<string[]>([]);
 
   React.useEffect(() => {
@@ -40,7 +42,7 @@ export const HomePage: React.FC<{}> = () => {
             </Grid>
           </Grid>
           {activeStep === 0 && <InputForm participant={setParticipant} />}
-          {activeStep === 1 && <WinnerSection />}
+          {activeStep === 1 && <WinnerSection totalWinners={  totalWinners } SetTotalWinners={ setTotalWinners } />}
         </Container>
         <Button onClick={nextStep}>Next</Button>
       </Container>

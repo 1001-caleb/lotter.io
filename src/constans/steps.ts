@@ -1,5 +1,6 @@
 export const steps = [
-    "agregar a los participantes",
-    "elejir cantidad de ganadores y sortear"
+    "Agregar a los participantes",
+    "Elejir cantidad de ganadores y sortear",
+    "Ver ganadores"
 ]
 
