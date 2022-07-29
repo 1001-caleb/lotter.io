@@ -8,6 +8,11 @@ type InputFormType = {
 export const InputForm: React.FC<InputFormType> = ({ participant }) => {
     const [item, setItem] = React.useState<string | null>(null);
 
+    
+    const insertData = (e: React.ChangeEvent<HTMLInputElement>) => {
+        setItem(e.target.value);
+    }
+
     const handleSubmit = (e: React.ChangeEvent<HTMLFormElement>) =>{
         e.preventDefault();
         if(item){
@@ -16,9 +21,6 @@ export const InputForm: React.FC<InputFormType> = ({ participant }) => {
         }
     }
 
-    const insertData = (e: React.ChangeEvent<HTMLInputElement>) => {
-        setItem(e.target.value);
-    }
 
     return (
         <>

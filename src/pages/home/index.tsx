@@ -3,8 +3,8 @@ import React from "react";
 import { HeaderComponent } from "../../components";
 import { steps } from "../../constans/steps";
 import { selectRandom } from "../../utils/selectRandom";
-import { InputForm, WinnerSection } from "./sections";
-import { StepsSection } from "./sections/steps";
+import { InputForm, WinnerSection, StepsSection } from "./sections";
+
 
 export const HomePage: React.FC<{}> = () => {
   const [participant, setParticipant] = React.useState<string | null>(null);
@@ -54,7 +54,7 @@ export const HomePage: React.FC<{}> = () => {
             </Grid>
           </Grid>
           {activeStep === 0 && <InputForm participant={setParticipant} />}
-          {activeStep === 1 && (<WinnerSection totalWinners={totalWinners} SetTotalWinners={setTotalWinners} />)}
+          {activeStep === 1 && (<WinnerSection totalWinners={totalWinners} setTotalWinners={setTotalWinners} />)}
           {activeStep <= 1 ? (
             <Paper sx={{ height: "300px", mt: 2, mb: 2, padding: "0.5em 1em" }}>
               {participants.length > 0 ? (
